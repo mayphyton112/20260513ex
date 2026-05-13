@@ -125,55 +125,87 @@ print(f'{nums[3]}')
 2. 사용자에게 숫자 입력받아서
 1부터 입력한 숫자까지 합계 출력하기 ( 5 )
 '''
+intdata = int(input('숫자를 입력하세요: '))
+total = 0
+for num in range(1, intdata + 1):
+    total += num
+    print(f'num: {num}')
 
+print(f'total: {total}')
 
 '''
 3. 리스트에 있는 숫자 중 짝수만 출력하기
 [1,2,3,4,5,6]
 '''
+# nums = [1,2,3,4,5,6]
+# print(f'{nums[1::2]}')
 
+# nums = [1,2,3,4,5,6]
+# for nums in nums:
+#     if nums % 2 == 0:
+#         print(f'nums: {nums}')
 
+nums = [1,2,3,4,5,6]
+double_nums = [data for data in nums if data % 2 == 0]
+print(double_nums)
 '''
 4. 리스트 숫자를 오름차순 정렬하기
 [5,1,7,3]
 '''
-numbers = [5,1,7,3]
-numbers.sort()
-print(f'numbers: {numbers}')
+# numbers = [5,1,7,3]
+# numbers.sort()
+# print(f'numbers: {numbers}')
 
 '''
 5. 리스트 숫자를 내림차순 정렬하기
 [5,1,7,3]
 '''
-numbers = [5,1,7,3]
-numbers.sort(reverse=True)
-print(f'numbers: {numbers}')
+# numbers = [5,1,7,3]
+# numbers.sort(reverse=True)
+# print(f'numbers: {numbers}')
 
 '''
 6. 리스트 안 숫자의 평균 구하기 [10,20,30]
 '''
+nums = [10,20,30]
+average = sum(nums) / len(nums)
+print(f'average: {average}')
 
 '''
 7. 리스트에서 가장 작은 숫자 찾기
 (min() 사용 금지)
 '''
 
+
 '''
 8. 1부터 100까지 숫자 중
 3의 배수와 5의 배수 출력하기
 '''
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print(f'{num}: 3 과 5의 공배수')
+    elif num % 3 == 0:
+        print(f'{num}: 3의 배수')
+    elif num % 5 == 0:
+        print(f'{num}: 5의 배수')    
 
 '''
 9. 사용자가 입력한 숫자를 리스트에 저장하다가
 0 입력하면 종료 후 리스트 출력하기
 [입력: 3 ,입력: 7, 입력: 2 ,입력: 0]
 '''
+nums = [3, 7, 2, 0]
+while True:
+   userdata= int(input('숫자 입력: '))
+   print(f'nums: {nums}')
+   break
 
-
-
-
-
-
-
-
-
+nums = [3, 7, 2, 0]
+while True:
+   userdata= int(input('숫자 입력: '))
+   if userdata == 0:
+       print('종료')
+   
+   print(f'nums: {nums}')
+   break
+   
