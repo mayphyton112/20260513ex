@@ -111,15 +111,15 @@ reversre  옵션이 False면 오름차순(ASC), True면 내림차순(DESC)으로
 # print(f'del alphabet: {alphabet}')
 
 #1.숫자 5개를 리스트에 저장한 뒤 가장 큰 숫자 출력하기
-# [3, 7, 1, 9, 5]
-# nums = [3, 7, 1, 9, 5]
-# nums.sort()
-# print(f'nums: {nums}')
-# print(f'{nums[4]}')
-
+[3, 7, 1, 9, 5]
 nums = [3, 7, 1, 9, 5]
+nums.sort()
 print(f'nums: {nums}')
-print(f'{nums[3]}')
+print(f'{nums[4]}')
+
+# nums = [3, 7, 1, 9, 5]
+# print(f'nums: {nums}')
+# print(f'{nums[3]}')
 
 '''
 2. 사용자에게 숫자 입력받아서
@@ -152,17 +152,17 @@ print(double_nums)
 4. 리스트 숫자를 오름차순 정렬하기
 [5,1,7,3]
 '''
-# numbers = [5,1,7,3]
-# numbers.sort()
-# print(f'numbers: {numbers}')
+numbers = [5,1,7,3]
+numbers.sort()
+print(f'numbers: {numbers}')
 
 '''
 5. 리스트 숫자를 내림차순 정렬하기
 [5,1,7,3]
 '''
-# numbers = [5,1,7,3]
-# numbers.sort(reverse=True)
-# print(f'numbers: {numbers}')
+numbers = [5,1,7,3]
+numbers.sort(reverse=True)
+print(f'numbers: {numbers}')
 
 '''
 6. 리스트 안 숫자의 평균 구하기 [10,20,30]
@@ -175,7 +175,10 @@ print(f'average: {average}')
 7. 리스트에서 가장 작은 숫자 찾기
 (min() 사용 금지)
 '''
-
+nums = [10,20,30]
+nums.sort()
+print(f'nums: {nums}')
+print(f'{nums[0]}')
 
 '''
 8. 1부터 100까지 숫자 중
@@ -194,11 +197,11 @@ for num in range(1, 101):
 0 입력하면 종료 후 리스트 출력하기
 [입력: 3 ,입력: 7, 입력: 2 ,입력: 0]
 '''
-nums = [3, 7, 2, 0]
-while True:
-   userdata= int(input('숫자 입력: '))
-   print(f'nums: {nums}')
-   break
+# nums = [3, 7, 2, 0]
+# while True:
+#    userdata= int(input('숫자 입력: '))
+#    print(f'nums: {nums}')
+#    break
 
 nums = [3, 7, 2, 0]
 while True:
